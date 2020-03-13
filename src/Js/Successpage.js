@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "../css/App.css";
 import { Button } from "react-bootstrap";
 
 export default class SuccessPage extends React.Component {

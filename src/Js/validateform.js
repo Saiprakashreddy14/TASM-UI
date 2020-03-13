@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 import React from "react";
-import "./App.css";
-import logo from "../src/resources/images/logo.png";
+import "../css/App.css";
+import logo from "../resources/images/logo.png";
 
 const st = {
   lk:

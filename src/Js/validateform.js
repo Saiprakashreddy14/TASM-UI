@@ -8,6 +8,7 @@ const st = {
     "https://a0iykk3pdc.execute-api.eu-west-1.amazonaws.com/test/tweets?hashtag="
 };
 
+
 const initialState = {
   name: "",
   nameError: ""

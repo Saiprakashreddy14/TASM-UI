@@ -43,12 +43,23 @@ export default class ValiationForm extends React.Component {
     return true;
   };
 
+dialResponse = () => {
+    console.log(this.responseText);//should be return value of 1
+   };
+   
+ 
+
   handleSubmit = event => {
     event.preventDefault();
     const isValid = this.validate();
     if (isValid) {
       console.log("Fetch successful");
-      window.open(st.lk + this.state.name, "_blank");
+
+      // Making an Ajax Rquest to the Api Gateway
+      var oReq = new XMLHttpRequest();
+      oReq.onload = this.dialResponse;
+      oReq.open("get",st.lk + this.state.name, true);
+ 
       this.setState(initialState);
       this.props.history.replace(`/success`);
     } else {
